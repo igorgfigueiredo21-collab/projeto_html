@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Blog</title>
+    <style>
+        /* Reset e configurações gerais */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            scroll-behavior: smooth;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 220px;
+            background-color: #1b1b1b;
+            color: #fff;
+            height: 100vh;
+            padding-top: 20px;
+            position: fixed;
+        }
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar ul li {
+            padding: 18px;
+            border-bottom: 1px solid #333;
+        }
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+        }
+        .sidebar ul li a:hover {
+            background-color: #444;
+            font-weight: bold;
+        }
+
+        /* Conteúdo principal */
+        .content {
+            margin-left: 240px;
+            flex: 1;
+            padding: 40px 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #222;
+            font-size: 2.8rem;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #222;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        /* Seções de imagens */
+        .img-box {
+            width: 250px;
+            height: 250px;
+            background-color: #ccc;
+            margin: 15px auto;
+            border-radius: 15px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Sobre mim / textos */
+        .sobre-mim {
+            text-align: justify;
+            font-size: 1.2rem;
+            line-height: 1.7;
+            color: #222;
+            margin-bottom: 50px;
+        }
+
+        /* Notícias */
+        .news {
+            padding: 20px 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            color: #222;
+            font-size: 1.15rem;
+            line-height: 1.7;
+        }
+        .news h2 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 1.6rem;
+        }
+        .news:nth-child(odd) {
+            background-color: #d0e8ff;
+        }
+        .news:nth-child(even) {
+            background-color: #ece2cf;
+        }
+
+        /* Links */
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Vídeo */
+        video {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#noticias">Notícias</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#formulario">Formulário</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#Download">Download</a></li>
+        </ul>
+    
+    </div>
+
+    <!-- Conteúdo -->
+    <div class="content">
+
+        <!-- Início -->
+        <section id="inicio">
+            <h1>Seja bem-vindo</h1>
+            <div class="img-box" style="background-image: url('https://wallpapers.com/images/featured/fundo-de-anime-de-carro-n9y7wos0kv3fchgl.jpg');"></div>
+        </section>
+
+        <!-- Sobre o Blog -->
+        <section id="sobre" class="sobre-mim">
+            <h1>Um pouco sobre o blog</h1>
+            <p>
+                Este blog foi criado com o objetivo de aprofundar o conhecimento sobre o universo automotivo, abordando de maneira detalhada o funcionamento dos veículos modernos, com ênfase especial em sistemas de sobrealimentação, como turbocompressores e compressores mecânicos. Aqui, o leitor encontra explicações técnicas sobre motores de combustão interna, dinâmica de fluxo de ar, sistemas de alimentação, gerenciamento eletrônico, combustão, eficiência térmica e estratégias de aumento de desempenho.
+            </p>
+            <p>
+                O conteúdo explora desde os princípios básicos — como mistura ar-combustível, taxa de compressão, intercooler, wastegate, blow-off, mapeamento de injeção e ignição — até temas avançados, como pressão de trabalho do turbo, dimensionamento de turbina e carcaças, lag e spool, cálculo de fluxo em CFM, leitura de logs, impactos de AFR (Air-Fuel Ratio) e EGT (Exhaust Gas Temperature) no motor, além de aspectos estruturais como pistões, bielas, virabrequim, taxa estática e dinâmica.
+            </p>
+            <p>
+                O blog também aborda tecnologias atuais como injeção direta, motores downsized, gerenciamento eletrônico por ECU, sensores e atuadores, bem como sistemas auxiliares como arrefecimento, lubrificação, escape, transmissão e aerodinâmica. Além disso, traz explicações sobre manutenção preventiva e corretiva, preparação automotiva, upgrades de performance, revisão de componentes e cuidados essenciais para garantir durabilidade e segurança em motores aspirados e turbinados.
+            </p>
+            <p>
+                O objetivo é entregar conteúdo confiável e aprofundado tanto para entusiastas que desejam entender tecnicamente o funcionamento do carro, quanto para quem trabalha com mecânica, preparação ou simplesmente busca expandir seu conhecimento no setor automotivo. Aqui, cada tema é tratado com clareza, precisão e foco em explicar não apenas “o que é”, mas como funciona e por que funciona.
+            </p>
+        </section>
+
+        <!-- Notícias -->
+        <section id="noticias">
+            <h2>🔥 Notícias sobre o mundo automotivo 🔥</h2>
+
+            <div class="news">
+                <h2>🚗🔥 Mundo Automotivo Preparado no Brasil – Novidades e Tendências 2025</h2>
+                <p>
+                    O cenário de carros modificados e preparados no Brasil segue ganhando força em 2025, com eventos e tendências que mostram o crescimento do mercado de tuning nacional.
+                    <br><br>
+                    O AutoShow Fest, que acontecerá no fim de novembro em São Paulo, terá uma edição especial dedicada a veículos modificados. O público poderá conferir projetos turbinados, customizados, rebaixados e diversas inovações do mundo do tuning, reforçando a cultura automotiva entre entusiastas e preparadores.
+                    <br><br>
+                    No Salão Internacional do Automóvel de São Paulo 2025, a preparação automotiva também terá destaque com a Arena de Customização, conduzida pelo renomado preparador Fernando “Batistinha”. Lá, visitantes poderão acompanhar de perto todas as etapas de modificação, incluindo ajustes de suspensão, pintura, performance de motores e upgrades eletrônicos.
+                    <br><br>
+                    No automobilismo profissional, a Stock Car Pro Series 2025 trouxe inovações significativas: os antigos motores V8 deram lugar a motores quatro cilindros turbo, acompanhados de avançados sistemas eletrônicos de gerenciamento de performance, desenvolvidos pela FuelTech. Essa mudança mostra como a tecnologia de preparação e a eletrônica automotiva estão cada vez mais presentes nas pistas.
+                    <br><br>
+                    Além disso, o mercado de tuning popular continua aquecido, com modelos como VW Gol, Corsa e Uno sendo os preferidos para projetos de preparação, graças à ampla disponibilidade de peças, baixo custo e facilidade de modificação.
+                </p>
+            </div>
+
+            <div class="news">
+                <h2>🚗🔥 Mercado de Carros Preparados</h2>
+                <p>
+                    O mercado de carros preparados e tuning no Brasil continua em crescimento, consolidando-se como uma cultura automotiva e segmento econômico relevante.
+                    <br><br>
+                    <strong>Mercado e Economia</strong><br>
+                    O setor de preparação automotiva movimenta cerca de US$ 1 bilhão ao ano, incluindo oficinas, peças, kits de performance e customização.
+                    <br>
+                    Oficinas especializadas em tuning têm crescido, oferecendo serviços de remap de ECU, instalação de turbos, preparação de suspensão e freios, e customização estética.
+                    <br>
+                    Mais de 60% dos preparadores iniciantes no Brasil escolhem modelos populares, como VW Gol, Corsa e Uno, devido à disponibilidade de peças e baixo custo.
+                    <br><br>
+                    <strong>Tipos de Preparação Mais Comuns</strong><br>
+                    Turbo / Supercharger: aumento de potência e torque, geralmente acompanhado de upgrades de injeção e freios.<br>
+                    Reprogramação de ECU (Chip Tuning): ajuste eletrônico de combustível, ignição e pressão de turbo.<br>
+                    Customização estética: pintura, rodas, suspensão rebaixada e iluminação.
+                    <br><br>
+                    <strong>Eventos e Cultura</strong><br>
+                    AutoShow Fest 2025 (SP): edição especial dedicada a carros modificados, com destaque para projetos turbinados e rebaixados.<br>
+                    Salão do Automóvel SP 2025 – Arena de Customização: apresenta modificações ao vivo, incluindo ajustes de suspensão, motores e eletrônica.<br>
+                    Tuning Show Brasil e outros encontros promovem networking entre entusiastas, preparadores e empresas do setor.
+                </p>
+            </div>
+
+            <div class="news">
+                <h2>📊 Estatísticas do Mundo Automotivo Preparado no Brasil – 2025</h2>
+                <p>
+                    💰 Mercado e Economia<br>
+                    Mercado de tuning e preparação automotiva: ~US$ 1 bilhão/ano<br>
+                    Crescimento de oficinas especializadas em remap de ECU, turbos, suspensão e customização estética
+                    <br><br>
+                    🚗 Modelos Populares<br>
+                    VW Gol – 35%<br>
+                    Chevrolet Corsa – 25%<br>
+                    Fiat Uno – 20%<br>
+                    Outros – 20%
+                    <br><br>
+                    🔧 Tipos de Preparação Mais Comuns<br>
+                    Turbo / Supercharger: 45%<br>
+                    Reprogramação de ECU / Chip Tuning: 30%<br>
+                    Suspensão e customização estética: 25%
+                    <br><br>
+                    🎯 Perfil dos Entusiastas<br>
+                    Buscam mais potência: 70%<br>
+                    Consideram consumo de combustível importante: 30%<br>
+                    Realizam upgrades combinados de motor + eletrônica: 40%
+                    <br><br>
+                    📅 Eventos e Cultura<br>
+                    AutoShow Fest 2025 (SP): foco em carros turbinados, rebaixados e customizados<br>
+                    Salão do Automóvel 2025 – Arena de Customização: demonstração ao vivo de modificações<br>
+                    Tuning Show Brasil: networking entre entusiastas, preparadores e marcas
+                    <br><br>
+                    🚀 Tendências 2025<br>
+                    Crescente preparação de veículos híbridos e elétricos<br>
+                    Expansão do uso de eletrônica avançada e monitoramento de performance<br>
+                    Maior investimento em aftermarket e peças de reposição
+                </p>
+            </div>
+
+            <div class="news">
+                <h2>📰 Notícias recentes ou próximas sobre tuning / preparação no Brasil</h2>
+                <p>
+                    AutoShow Fest 2025 vai receber carros modificados – A edição de 30 de novembro do AutoShow Fest, em São Paulo (Expo Center Norte), será voltada para carros modificados e customizados. A entrada de pedestres é gratuita.<br>
+                    Salão do Automóvel 2025 terá arena de customização by Batistinha – No Salão Internacional do Automóvel de São Paulo (22 a 30 de novembro), vai existir a “Arena de Customização by Batistinha”. Lá, o público poderá acompanhar em tempo real todas as etapas de modificação de carros, desde a preparação de motor até alterações eletrônicas.<br>
+                    Stock Car Pro Series 2025 troca para motor turbo e eletrônica de performance – Na Stock Car Brasil 2025, os carros competirão com novos motores turbo 4 cilindros ao invés dos antigos V8. Além disso, a categoria usará um sistema eletrônico de controle de performance desenvolvido pela FuelTech.
+                </p>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section id="reviews" class="sobre-mim">
+            <h2>🔥 Reviews 🔥</h2>
+            <video src="C:\Users\igorg\Downloads\Área de Trabalho\html\fotohtml\6 COISAS SOBRE CARRO ＂TURBO ORIGINAL＂ QUE VOCÊ PRECISA SABER[1080p+medium].mkv" controls></video>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato" class="sobre-mim">
+            <!-- Contato -->
+<section id="contato" class="sobre-mim">
+    <h2>Contato</h2>
+    <p>Preencha o formulário abaixo para entrar em contato conosco:</p>
+
+    <form action="#" method="post" style="max-width: 600px; margin: 0 auto;">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ccc;"><br>
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ccc;"><br>
+
+        <label for="assunto">Assunto:</label><br>
+        <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem" required style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ccc;"><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui..." rows="6" required style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ccc;"></textarea><br>
+
+        <button type="submit" style="padding: 12px 25px; border: none; border-radius: 6px; background-color: #1a73e8; color: white; font-size: 1rem; cursor: pointer;">Enviar Mensagem</button>
+    </form>
+</section>
+
+        </section>
+
+        <!-- Formulário -->
+        <section id="formulario" class="sobre-mim">
+            <h1>Formulário de Contato</h1>
+        <p>Preencha os campos abaixo para entrar em contato conosco.</p>
+    </header>
+
+    <form>
+
+        <label for="nome">Nome Completo:</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome aqui"><br><br>
+
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com"><br><br>
+
+
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" placeholder="********"><br><br>
+
+
+        <label for="idade">Sua Idade:</label><br>
+        <input type="number" id="idade" name="idade" min="18" max="99"><br><br>
+
+
+        <p>Qual seu gênero favorito de carro</p>
+        <input type="radio" id="turbo" name="carro" value="turbo">
+        <label for="turbo">turbo</label><br>
+        <input type="radio" id="aspirado" name="carro" value="aspirado">
+        <label for="aspirado">aspirado</label><br>
+        <input type="radio" id="elétrico" name="briquedo" value="elétrico">
+        <label for="elétrico">elétrico</label><br><br>
+
+
+
+        <label for="mensagem">Sua Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="5" cols="40" placeholder="Digite sua mensagem aqui..."></textarea><br><br>
+
+        <button type="submit">Enviar Formulário</button>
+        <button type="reset">Limpar Campos</button>
+    </form>
+
+    <footer>
+        <p>Obrigado por seu contato!</p>
+    </footer>
+
+        </section>
+
+
+<!-------------------Download------------------------------>
+ <section id="Download" class="sobre-mim">
+    <h2>Download</h2>
+
+    <a href="data:image/jpeg;base64,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" download class="download">
+       Baixar imagem
+    </a>
+</section>
+
+<style>
+.download {
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: arial;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.download:hover {
+    background-color: blue;
+}
+</style>
+
+
+
+
+
+    </div>
+</body>
+</html>
+
